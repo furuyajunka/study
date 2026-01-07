@@ -3,15 +3,15 @@ package curriculum_A;
 public class Question1 {
 	public static void main(String[] args) {
  		//Q1,2
-		byte byteNum = 10;
-		short shortNum = 100;
-		int intNum = 1000;
-		long longNum = 10000;
-		float floutNum = 9.5f;
-		double doubleNum = 10.5;
-		char letter = 'a';
-		String letters = "ハロー";
-		boolean isBoolean = true;
+		byte byteNum = 0;
+		short shortNum = 0;
+		int intNum = 0;
+		long longNum = 0L;
+		float floutNum = 0.0f;
+		double doubleNum = 0.0;
+		char letter = '\u0000';
+		String letters = "null";
+		boolean isBoolean = false;
 		
 		//Q3
 		System.out.println(byteNum+shortNum+intNum+longNum);
