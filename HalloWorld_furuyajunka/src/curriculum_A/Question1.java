@@ -18,7 +18,7 @@ public class Question1 {
 		System.out.println(byteNum*2);
 		System.out.println(letter+" "+letters+" "+isBoolean );
 		System.out.println(byteNum*3+shortNum+intNum+longNum);
-		System.out.println((double)byteNum*shortNum*intNum*longNum);//←1E+10ではなく1.0E10という表記になる
+		System.out.println((double)byteNum*shortNum*intNum*longNum);
 		System.out.println(doubleNum/shortNum);
 		System.out.println(byteNum-shortNum);
 		
