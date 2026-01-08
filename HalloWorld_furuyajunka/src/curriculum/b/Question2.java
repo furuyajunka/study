@@ -56,9 +56,9 @@ public class Question2 {
 		int score1 = 69;
 		if ( score1 >= 90 ) { 
 			System.out.println("優");
-		} else if ( score1 > 70 ){
+		} else if ( score1 >= 70 ){
 			System.out.println("良");
-		} else if ( score1 > 50){
+		} else if ( score1 >= 50){
 			System.out.println("可");
 		} else {
 			System.out.println("不可");
