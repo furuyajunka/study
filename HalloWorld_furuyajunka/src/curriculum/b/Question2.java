@@ -119,6 +119,9 @@ public class Question2 {
 		default : 
 			System.out.println("無効な月です");
 		}
+		
+
+		
 		scanner.close();
 		
 	}
