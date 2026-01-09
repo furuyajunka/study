@@ -80,8 +80,8 @@ public class Question3 {
 		System.out.println("終了しました。");		
 		
 		//Q11
-		for (int a =01 ; a<10 ; a++ ) {
-			for (int b =01 ; b<10 ; b++ ) {
+		for (int a =1 ; a<10 ; a++ ) {
+			for (int b =1 ; b<10 ; b++ ) {
 				String A = String.format("%02d", a);	
 				String B = String.format("%02d", b);
 				String AB = String.format("%02d", a*b);
@@ -91,11 +91,10 @@ public class Question3 {
 		}
 		
 		//Q12
-		Scanner scanner1 = new Scanner(System.in);  //コンソールを読み取れるようにする
 		Random random = new Random();  //ランダムな数を割り振れるようにする
 		
 		System.out.println("商品名を「、」区切りで入力してください");
-		String input = scanner1.nextLine();  //コンソールから入力された文字を読み取る
+		String input = scanner.nextLine();  //コンソールから入力された文字を読み取る
 		String[] products = input.split("、");  //読み取った文字を「、」で区切る
 		
 		int stock = random.nextInt(12);//0～12でランダムな数を残台数にする
@@ -117,7 +116,6 @@ public class Question3 {
 			}
 		}
 		scanner.close();
-		scanner1.close();
 	}
 }
 	
