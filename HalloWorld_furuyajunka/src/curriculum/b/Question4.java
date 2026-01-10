@@ -4,19 +4,19 @@ import java.util.Scanner;
 public class Question4 {
 	public static void main(String[] args) {
 		
-		//Q1　完
+		//Q1　
 		int[] numbers = {1,2,3,4,5};
 		for (int number:numbers) {
 			System.out.println(number);
 		}
 		
-		//Q2　完
+		//Q2　
 		int[] numbers1 = {10,20,30,40,50};
 		for(int i= numbers1.length -1 ; i>=0 ; i--) {
 			System.out.println(numbers1[i]);
 		}
 		
-		//Q3　完
+		//Q3　
 		int[] numbers2 = {3,5,7,9,11};
 		int sum = 0;
 		for (int num : numbers2) {
@@ -24,7 +24,7 @@ public class Question4 {
 		}
 		System.out.println(sum);
 		
-		//Q4　完
+		//Q4　
 		int[] numbers3 = {12,7,9,21,5,18};
 		int max = numbers3[0];
 		int min = numbers3[0];
@@ -34,14 +34,14 @@ public class Question4 {
 		}
 		System.out.println("最大値は" + max);
 		System.out.println("最小値は" + min);
-		
-		//Q5　完
+	
+		//Q5　
 		int[] numbers4 = {1,2,3,4,5};
 		for (int num : numbers4 ) {
 			System.out.println( num*2 );
 		}
 		
-		//Q6　完
+		//Q6　
 		int[] numbers5 = {4,7,10,15,20};
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("数値を入力してください");
@@ -96,6 +96,6 @@ public class Question4 {
 				}
 			}
 		}
-		
+		scanner.close();
 	}
 }
