@@ -46,7 +46,7 @@ public class Question4 {
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("数値を入力してください");
 		int num = scanner.nextInt();
-		boolean a = false; // 
+		boolean a = false;  
 		for (int i = 0; i < numbers5.length; i++) { 
 			if (numbers5[i] == num ) {
 				a = true ; //number5の中を全部調べて数値が一致したら真にする
