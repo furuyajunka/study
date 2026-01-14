@@ -11,49 +11,49 @@ public class Question4 {
 		}
 		
 		//Q2　
-		int[] numbers1 = {10,20,30,40,50};
-		for(int i= numbers1.length -1 ; i>=0 ; i--) {
-			System.out.println(numbers1[i]);
+		int[] reverseNumbers = {10,20,30,40,50};
+		for(int i= reverseNumbers.length -1 ; i>=0 ; i--) {
+			System.out.println(reverseNumbers[i]);
 		}
 		
 		//Q3　
-		int[] numbers2 = {3,5,7,9,11};
+		int[] oddnumbers = {3,5,7,9,11};
 		int sum = 0;
-		for (int num : numbers2) {
+		for (int num : oddnumbers) {
 			sum += num;
 		}
 		System.out.println(sum);
 		
 		//Q4　
-		int[] numbers3 = {12,7,9,21,5,18};
-		int max = numbers3[0];
-		int min = numbers3[0];
-		for (int i= 1; i<numbers3.length;i++) {
-			max = (numbers3[i] > max )? numbers3[i] : max ;
-			min = (numbers3[i] < min )? numbers3[i] : min ;
+		int[] valuesForMinMax = {12,7,9,21,5,18};
+		int max = valuesForMinMax[0];
+		int min = valuesForMinMax[0];
+		for (int i= 1; i<valuesForMinMax.length;i++) {
+			max = (valuesForMinMax[i] > max )? valuesForMinMax[i] : max ;
+			min = (valuesForMinMax[i] < min )? valuesForMinMax[i] : min ;
 		}
 		System.out.println("最大値は" + max);
 		System.out.println("最小値は" + min);
 	
 		//Q5　
-		int[] numbers4 = {1,2,3,4,5};
-		for (int num : numbers4 ) {
+		int[] orderedNumber = {1,2,3,4,5};
+		for (int num : orderedNumber ) {
 			System.out.println( num*2 );
 		}
 		
 		//Q6　
-		int[] numbers5 = {4,7,10,15,20};
+		int[] randomNumbers = {4,7,10,15,20};
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("数値を入力してください");
 		int num = scanner.nextInt();
-		boolean a = false;  
-		for (int i = 0; i < numbers5.length; i++) { 
-			if (numbers5[i] == num ) {
-				a = true ; //number5の中を全部調べて数値が一致したら真にする
+		boolean found = false;  
+		for (int i = 0; i < randomNumbers.length; i++) { 
+			if (randomNumbers[i] == num ) {
+				found = true ; //number5の中を全部調べて数値が一致したら真にする
 				break;
 			}
 		}
-		System.out.println(a? "\"入力した値\"" + "は配列に含まれています" : "含まれていません");
+		System.out.println(found?  num + "は配列に含まれています" : num + "は配列に含まれていません");
 		
 		//Q7
 		int[][] array = {{1,2},{3,4},{5,6}};
@@ -75,24 +75,24 @@ public class Question4 {
 		System.out.println(sum1);
 		
 		//Q9
-		int[][] array2 = {{12, 15, 8}, {6, 19, 25}, {30, 2, 10}};
-		int max1 =array2[0][0];
-		int min1 =array2[0][0];
-		for (int i=0 ; i<array2.length;i++) {
-			for(int j=0 ; j<array2[i].length; j++) {
-			max1 = (array2[i][j] > max1 )? array2[i][j] : max1 ;
-			min1 = (array2[i][j] < min1 )? array2[i][j] : min1 ;
+		int[][] matrix = {{12, 15, 8}, {6, 19, 25}, {30, 2, 10}};
+		int Max =matrix[0][0];
+		int Min =matrix[0][0];
+		for (int i=0 ; i<matrix.length;i++) {
+			for(int j=0 ; j<matrix[i].length; j++) {
+			Max = (matrix[i][j] > Max )? matrix[i][j] : Max ;
+			Min = (matrix[i][j] < Min )? matrix[i][j] : Min ;
 			}
 		}
-		System.out.println("最大値は" + max1);
-		System.out.println("最小値は" + min1);
+		System.out.println("最大値は" + Max);
+		System.out.println("最小値は" + Min);
 		
 		//Q10
-		int[][][] array3 = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};
-		for (int i=0 ; i<array3.length ; i++ ) {
-			for (int j=0 ; j<array3[i].length ; j++) {
-				for (int k=0 ; k<array3[i][j].length ; k++) {
-					System.out.print(array3[i][j][k]);
+		int[][][] array3D = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};
+		for (int i=0 ; i<array3D.length ; i++ ) {
+			for (int j=0 ; j<array3D[i].length ; j++) {
+				for (int k=0 ; k<array3D[i][j].length ; k++) {
+					System.out.print(array3D[i][j][k]);
 				}
 			}
 		}
