@@ -4,7 +4,6 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//Q4
-		Greeting greetnig = new Greeting();
 		Greeting.sayHello();
 		
 		//Q5
