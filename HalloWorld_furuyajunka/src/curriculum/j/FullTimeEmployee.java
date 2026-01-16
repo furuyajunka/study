@@ -1,0 +1,17 @@
+package curriculum.j;
+
+public class FullTimeEmployee extends Employee implements Billable{
+	public FullTimeEmployee(String id, String name) {
+		super(id,name);
+	}
+	
+	@Override
+	public int costForDay(int hoursWorked) {
+		int hourlyRate = 1250;
+		int overtime = Math.max(0, hourlyRate-8);
+		int regularHours = hoursWorked - overtime;
+
+        return (regularHours * hourlyRate)
+             + (int)(overtime * hourlyRate * 1.25);
+	}
+}
