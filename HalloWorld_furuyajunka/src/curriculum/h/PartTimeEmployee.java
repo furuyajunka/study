@@ -3,10 +3,11 @@ package curriculum.h;
 public class PartTimeEmployee extends Employee{
 	private static final int HOURLY_PART = 1000;
 	
-	public PartTimeEmployee() {
-		super();
+	public PartTimeEmployee(String id, String name) {
+		super(id,name);
 	}
 	
+	@Override
 	public int calculateDailyWage(int hoursWorked) {
 		return hoursWorked * HOURLY_PART;
 	}
