@@ -8,7 +8,7 @@ public class FullTimeEmployee extends Employee implements Billable{
 	@Override
 	public int costForDay(int hoursWorked) {
 		int hourlyRate = 1250;
-		int overtime = Math.max(0, hourlyRate-8);
+		int overtime = Math.max(0, hoursWorked-8);
 		int regularHours = hoursWorked - overtime;
 
         return (regularHours * hourlyRate)
