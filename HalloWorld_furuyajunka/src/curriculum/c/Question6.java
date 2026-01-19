@@ -14,13 +14,20 @@ public class Question6 {
 				System.out.print("グー(0), チョキ(1), パー(2) を入力:");
 				int input = scanner.nextInt();
 				
+				//入力チェック
+				if (!HandUtil.isValidHand(input)) {
+					System.out.println("0～2の数字を再入力してください");
+					System.out.println();
+					continue;
+				}
+				
 				player.setHand(input);
 				cpu.generateHand();
 				
 				System.out.println("あなたの手" + player.getHandName());
 				System.out.println("CPUの手" + cpu.getHandName());
 				
-				int result =(player.getHand() - cpu.gaeHand() + 3 ) % 3 ;
+				int result =(player.getHand() - cpu.getHand() + 3 ) % 3 ;
 				
 				if (result == 0) {
 					System.out.println("あいこです");
@@ -29,7 +36,7 @@ public class Question6 {
 				} else if(result == 2) {
 					System.out.println("あなたの勝ちです");
 					isWin = true;
-				}
+				} 
 				
 			}
 			
