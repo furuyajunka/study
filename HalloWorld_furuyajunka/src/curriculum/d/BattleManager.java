@@ -2,8 +2,6 @@ package curriculum.d;
 
 import java.util.Random;
 
-import curriculum.c.Player;
-
 public class BattleManager {
 
     private Player player;
@@ -40,7 +38,7 @@ public class BattleManager {
         }
 
         logger.write("勝者：" +
-                (player.isAlive()) ? player.getName() : daemon.getName());
+                (player.isAlive() ? player.getName() : daemon.getName()));
 
         logger.write("=== Battle End ===");
     }

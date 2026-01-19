@@ -2,12 +2,13 @@ package curriculum.d;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class DaemonLoader {
 
-    public Daemon load(String fileName) {
+    public Daemon load(String filename) {
 
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
 
             String name = br.readLine();
             int hp = Integer.parseInt(br.readLine());
@@ -16,8 +17,8 @@ public class DaemonLoader {
 
             return new Daemon(name, hp, at, sp);
 
-        } catch (Exception e) {
-            throw new RuntimeException("Daemonの読み込みに失敗しました", e);
+        } catch (IOException | NumberFormatException e) {
+            throw new RuntimeException("daemon_status.txtの読み込みに失敗しました", e);
         }
     }
 }

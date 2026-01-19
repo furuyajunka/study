@@ -1,0 +1,13 @@
+=== Battle Start ===
+先攻：Player
+Player の攻撃 → Daemon HP:68
+Daemon の攻撃 → Player HP:39
+Player の攻撃 → Daemon HP:51
+Daemon の攻撃 → Player HP:27
+Player の攻撃 → Daemon HP:34
+Daemon の攻撃 → Player HP:15
+Player の攻撃 → Daemon HP:17
+Daemon の攻撃 → Player HP:3
+Player の攻撃 → Daemon HP:0
+勝者：Player
+=== Battle End ===
