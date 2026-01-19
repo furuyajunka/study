@@ -17,7 +17,6 @@ public class Question6 {
 				//入力チェック
 				if (!HandUtil.isValidHand(input)) {
 					System.out.println("0～2の数字を再入力してください");
-					System.out.println();
 					continue;
 				}
 				
