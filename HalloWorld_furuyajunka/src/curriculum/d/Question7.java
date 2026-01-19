@@ -1,0 +1,7 @@
+package curriculum.d;
+
+public class Question7 {
+    public static void main(String[] args) {
+        new GameLauncher().start();
+    }
+}
