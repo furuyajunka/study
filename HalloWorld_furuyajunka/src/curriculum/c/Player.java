@@ -3,10 +3,6 @@ package curriculum.c;
 public class Player {
     private int hand;
 
-    public Player(String string, int hp, int at, int sp) {
-    	
-	}
-
 	public void setHand(int hand) {
         this.hand = hand;
     }
